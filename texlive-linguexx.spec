@@ -1,11 +1,11 @@
 %global tl_name linguexx
-%global tl_revision 79758
+%global tl_revision 79843
 
 Name:		texlive-%{tl_name}
 Epoch:		1
-Version:	1.0
+Version:	1.2
 Release:	%{tl_revision}.1
-Summary:	Typesetting linguistic examples and glosses
+Summary:	A tagging-aware package for typesetting linguistic examples and glosses
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/linguexx
 License:	lppl1.3c
@@ -17,9 +17,9 @@ Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
 This is a standalone LaTeX package for linguistic examples, with a
-`linguex`-compatible input syntax and first-class support for accessible
+linguex-compatible input syntax and first-class support for accessible
 (tagged) PDF output. linguexx reimplements the familiar dot-syntax of
-linguex on the expl3 engine, with no dependency on linguex, cgloss4e, or
+linguex on the expl3 kernel, with no dependency on linguex, cgloss4e, or
 xspace. It runs on pdfLaTeX, XeLaTeX and LuaLaTeX. When the document
 enables the LaTeX tagging code, linguexx writes its examples into the
 PDF structure tree as accessible objects.
